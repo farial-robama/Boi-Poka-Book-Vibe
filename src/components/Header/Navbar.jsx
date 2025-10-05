@@ -20,14 +20,14 @@ const Navbar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Book Vibe</a>
+    <a className="btn btn-ghost text-xl font-bold">Book Vibe</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {links}
     </ul>
   </div>
-  <div className="navbar-end flex gap-3.5">
+  <div className="navbar-end flex flex-col md:flex-row gap-3.5">
     <a className="btn bg-[#23BE0A] text-white">sign in</a>
     <a className="btn bg-[#59C6D2] text-white">sign up</a>
   </div>
