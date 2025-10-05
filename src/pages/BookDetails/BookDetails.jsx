@@ -1,23 +1,32 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { addToStoredDB } from '../../utility/AddToDB';
 
 const BookDetails = () => {
     const {id} = useParams();
     const bookId = parseInt(id);
     const data = useLoaderData();
     const singleBook = data.find((book) => book.bookId === bookId);
-    const {bookName, image,review,author,category,yearOfPublishing,totalPages,rating,publisher,tags} = singleBook
+    const {bookName, image,review,author,category,yearOfPublishing,totalPages,rating,publisher,tags} = singleBook;
+
+    const handleMarkAsRead = id => {
+        addToStoredDB(id)
+
+    }
+
+
+
     return (
-       <div className="card bg-base-100 shadow-sm flex flex-row gap-12 mx-auto my-13">
-  <figure className=' object-contain p-6' >
-    <img
+       <div className="card bg-base-100 shadow-sm flex flex-col md:flex-row gap-12 mx-auto my-13">
+  <figure className='bg-[#1313130d] p-13' >
+    <img className=' object-contain w-83 rounded-md'
       src={image}
       alt="image" />
   </figure>
-  <div className="card-body w-2/5 ">
+  <div className="card-body md:w-2/5 ">
     <h2 className='card-title text-2xl'>
       {bookName}
-      <div className="badge badge-secondary">{category}</div>
+      <div className="badge bg-[#23BE0A] text-white">{category}</div>
     </h2>
     <h3 className='text-xl pb-7'>By: {author}</h3>
     <p>{review}</p>
@@ -53,7 +62,7 @@ const BookDetails = () => {
   </table>
 </div>
     <div className="card-actions justify-end">
-      <button className="btn btn-accent">Read</button>
+      <button onClick={() => handleMarkAsRead(id) } className="btn btn-accent">Read</button>
       <button className="btn btn-accent">Wishlist</button>
     </div>
   </div>
