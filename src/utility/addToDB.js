@@ -49,7 +49,7 @@ const addToWishlistDB = (id) =>{
     const bookId = Number(id);
 
     if (storedBookData.includes(bookId)) {
-        toast.info("You already read this book, can't add to Wishlist!");
+        toast.info("Already added to Read Books — can’t add to Wishlist!");
         return;
     }
 

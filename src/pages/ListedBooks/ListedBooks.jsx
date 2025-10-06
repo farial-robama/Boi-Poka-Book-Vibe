@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { getStoredBook, getStoreWishlist } from "../../utility/AddToDB";
-import Book from "../Book/Book";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WishlistBooks from "../WishlistBooks/WishlistBooks";
 
@@ -70,8 +69,8 @@ const ListedBooks = () => {
 
       {/* Sort dropdown */}
       <details className="dropdown my-6 flex justify-center">
-        <summary className="btn btn-active btn-success text-white m-1">
-          Sort By: {sort ? sort : "Select"}
+        <summary className="btn btn-active bg-[#59C6D2] text-white m-1">
+          Sort By : {sort ? sort : "Select"}
         </summary>
         <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
           <li>
