@@ -6,9 +6,11 @@ import { ToastContainer } from "react-toastify";
 
 const Root = () => {
   return (
-    <div className="md:max-w-6xl mx-auto">
+    <div className="md:max-w-6xl mx-auto flex flex-col min-h-screen">
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <main className="flex-grow">
+        <Outlet></Outlet>
+      </main>
       <Footer></Footer>
       <ToastContainer
         position="top-right"

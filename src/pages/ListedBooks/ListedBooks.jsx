@@ -14,7 +14,7 @@ const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   const data = useLoaderData();
-  
+
 
   useEffect(() => {
     const storedBookData = getStoredBook();
@@ -64,8 +64,8 @@ const ListedBooks = () => {
 
   return (
     <div>
-      <div className="bg-base-300 text-center my-8">
-        <button className="btn btn-ghost text-xl">Books</button>
+      <div className="bg-base-300 text-center font-bold py-4 my-8 text-2xl rounded-2xl">
+        Books
       </div>
 
       {/* Sort dropdown */}

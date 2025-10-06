@@ -67,8 +67,8 @@ const BookDetails = () => {
   </table>
 </div>
     <div className="card-actions justify-end">
-      <button onClick={() => handleMarkAsRead(id) } className="btn btn-accent">Read</button>
-      <button onClick={() => handleAddToWishlist(id)} className="btn btn-accent">Wishlist</button>
+      <button onClick={() => handleMarkAsRead(id) } className="btn btn-accent text-white">Read</button>
+      <button onClick={() => handleAddToWishlist(id)} className="btn btn-accent text-white">Wishlist</button>
     </div>
   </div>
 </div>
