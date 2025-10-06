@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
-import { addToStoredDB } from '../../utility/AddToDB';
+import { addToStoredDB, addToWishlistDB } from '../../utility/AddToDB';
+
 
 const BookDetails = () => {
     const {id} = useParams();
@@ -9,10 +10,14 @@ const BookDetails = () => {
     const singleBook = data.find((book) => book.bookId === bookId);
     const {bookName, image,review,author,category,yearOfPublishing,totalPages,rating,publisher,tags} = singleBook;
 
-    const handleMarkAsRead = id => {
+    const handleMarkAsRead = id => {   
         addToStoredDB(id)
 
     }
+
+    const handleAddToWishlist = (id) => {
+         addToWishlistDB(id);
+  };
 
 
 
@@ -63,7 +68,7 @@ const BookDetails = () => {
 </div>
     <div className="card-actions justify-end">
       <button onClick={() => handleMarkAsRead(id) } className="btn btn-accent">Read</button>
-      <button className="btn btn-accent">Wishlist</button>
+      <button onClick={() => handleAddToWishlist(id)} className="btn btn-accent">Wishlist</button>
     </div>
   </div>
 </div>

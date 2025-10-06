@@ -16,7 +16,7 @@ const Book = ({book}) => {
   <div className="card-body">
     <div className='flex flex-row items-center'>
         {
-            tags.map((tag) => <p key={tag.bookId}>{tag}</p>)
+            tags.map((tag) => <p key={tag}>{tag}</p>)
         }
     </div>
     <h2 className="card-title">
