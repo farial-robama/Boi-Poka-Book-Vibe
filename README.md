@@ -1,16 +1,26 @@
-# React + Vite
+<h1 align="center">
+       ✨  Boi Poka Book Vibe  ✨
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+![Badge](https://img.shields.io/badge/Tech_Stack-HTML-orange) ![Badge](https://img.shields.io/badge/CSS-blue) ![Badge](https://img.shields.io/badge/React_Js-cyan)
+ ![Badge](https://img.shields.io/badge/-Java_Script-yellow) ![Badge](https://img.shields.io/badge/Version-1.0-green) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## React Compiler
+<h3 align="center">
+          Live Project : https://boi-poka-book-vibe-01b074.netlify.app/
+</h3>
+<br />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack : <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/react%20-%2314354C.svg?&style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/> <img src="https://img.shields.io/badge/Chakra_UI-6066C7?style=for-the-badge&logo=chakraui&logoColor=white"/> 
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** HTML,CSS,React Js, Java Script, Tailwind CSS
+- **Version Control:** Git and GitHub
+
+
+
+
+
